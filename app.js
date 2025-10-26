@@ -146,7 +146,7 @@ form.addEventListener("submit", (e) => {
 //const timestampElement = document.createElement("p");
 //timestampElement.textContent = new Date(task.timestamp).toISOString();
 
-//tester sort men dette ble feil
+/*tester sort men dette ble feil
 const sortButton = document.getElementById("sortAlphabetically");
 sortButton.addEventListener("click", sort);
 function sort() {
@@ -161,9 +161,9 @@ function sort() {
   for (let book of currentList) {
     console.log(book.title);
   }
-  saveBooks(currentList);
+  //saveBooks(currentList);
   renderBooks();
-}
+}*/
 
 //Vis bøker
 function renderBooks() {
@@ -177,12 +177,13 @@ function renderBooks() {
     books.sort((a, b) => a.title.localeCompare(b.title));
   }
 
+  //sortering som ikke funket skikkelig
   // if (sortAlphabetically)
-  // books.sort((a, b) => {
-  //  if (a.title < b.title) return -1;
-  //  if (a.title > b.title) return 1;
-  //  return 0;
-  // });
+  //  books.sort((a, b) => {
+  //     if (a.title < b.title) return -1;
+  //    if (a.title > b.title) return 1;
+  //    return 0;
+  //   });
 
   listDiv.innerHTML = "";
 
